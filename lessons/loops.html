@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Bridges | Bridgit</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../lessons/lesson-styles.css">
+</head>
+<body>
+<!-- Lesson Navigation -->
+<nav class="lesson-nav">
+    <div class="container">
+        <a href="../index.html" class="back-btn">
+            <span class="arrow-icon">←</span> Back to Home
+        </a>
+        <div class="lesson-progress">
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 35%"></div>
+            </div>
+            <span>35% Complete</span>
+        </div>
+    </div>
+</nav>
+
+<!-- Lesson Header -->
+<header class="lesson-header">
+    <div class="container">
+        <div class="lesson-meta">
+            <span class="lesson-category">Control Flow</span>
+            <h1>Loop Bridges</h1>
+            <p class="lesson-description">Understand how loops create recurring paths in your code execution</p>
+        </div>
+        <div class="lesson-icon">↻</div>
+    </div>
+</header>
+
+<!-- Lesson Content -->
+<main class="lesson-container">
+    <section class="lesson-section">
+        <h2><span class="section-icon">🔄</span> The Cycle Concept</h2>
+
+        <div class="concept-visualization">
+            <div class="loop-animation">
+                <div class="loop-path"></div>
+                <div class="loop-runner"></div>
+                <div class="loop-counter">0</div>
+            </div>
+            <div class="concept-explanation">
+                <p>Loops are <strong>circular bridges</strong> that allow code to travel the same path multiple times until a condition is met.</p>
+                <div class="code-preview">
+            <pre><code>for (let step = 0; step < 5; step++) {
+  // Code executes here repeatedly
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section">
+        <h2><span class="section-icon">🔁</span> Loop Types</h2>
+
+        <div class="loop-types-grid">
+            <div class="loop-card">
+                <div class="loop-header">
+                    <div class="loop-icon">for</div>
+                    <h3>Counted Loop</h3>
+                </div>
+                <p>Runs a specific number of times</p>
+                <div class="code-compact">
+            <pre><code>for (let i = 0; i < 5; i++) {
+  console.log(i);
+}</code></pre>
+                </div>
+                <div class="loop-visual">
+                    <div class="loop-line"></div>
+                    <div class="loop-point" style="--pos: 0%">1</div>
+                    <div class="loop-point" style="--pos: 25%">2</div>
+                    <div class="loop-point" style="--pos: 50%">3</div>
+                    <div class="loop-point" style="--pos: 75%">4</div>
+                    <div class="loop-exit">Exit</div>
+                </div>
+            </div>
+
+            <div class="loop-card">
+                <div class="loop-header">
+                    <div class="loop-icon">while</div>
+                    <h3>Conditional Loop</h3>
+                </div>
+                <p>Runs while condition is true</p>
+                <div class="code-compact">
+            <pre><code>while (condition) {
+  // Code runs
+}</code></pre>
+                </div>
+                <div class="loop-visual">
+                    <div class="loop-line conditional"></div>
+                    <div class="loop-point conditional">Start</div>
+                    <div class="loop-exit conditional">Exit</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section interactive-section">
+        <h2><span class="section-icon">👨‍💻</span> Interactive Lab</h2>
+
+        <div class="interactive-lab">
+            <div class="lab-controls">
+                <div class="control-group">
+                    <label>Loop Type</label>
+                    <select id="loop-type-select">
+                        <option value="for">For Loop</option>
+                        <option value="while">While Loop</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label>Iterations</label>
+                    <input type="range" id="loop-iterations" min="1" max="10" value="5">
+                    <span id="iterations-display">5</span>
+                </div>
+
+                <button class="btn btn-primary" id="run-loop-btn">
+                    Run Loop
+                </button>
+            </div>
+
+            <div class="lab-visualization">
+                <div class="loop-animation-container">
+                    <div class="dynamic-loop-path"></div>
+                    <div class="dynamic-loop-runner"></div>
+                </div>
+                <div class="loop-console" id="loop-output"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lesson-section real-world-section">
+        <h2><span class="section-icon">🌐</span> Real World Bridges</h2>
+
+        <div class="example-cards">
+            <div class="example-card">
+                <div class="example-icon">🛒</div>
+                <h3>Shopping Cart</h3>
+                <p>Processing each item in a cart:</p>
+                <div class="code-compact">
+            <pre><code>cart.forEach(item => {
+  calculateTotal(item);
+});</code></pre>
+                </div>
+            </div>
+
+            <div class="example-card">
+                <div class="example-icon">📊</div>
+                <h3>Data Analysis</h3>
+                <p>Reading dataset rows:</p>
+                <div class="code-compact">
+            <pre><code>while (data.hasNext()) {
+  process(data.next());
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Lesson Navigation Footer -->
+<footer class="lesson-footer">
+    <div class="container">
+        <a href="functions.html" class="btn btn-secondary">
+            ← Previous: Functions
+        </a>
+        <a href="variables.html" class="btn btn-primary">
+            Next: Variables →
+        </a>
+    </div>
+</footer>
+
+<script src="../lessons/lesson-scripts.js"></script>
+</body>
+</html>

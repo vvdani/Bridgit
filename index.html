@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridgit | Code ⇄ Language</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">
+            <span class="logo-icon">〈〉</span>
+            <span class="logo-text">bridgit</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="#lessons" class="nav-link active">Lessons</a>
+            <a href="#practice" class="nav-link">Practice</a>
+            <a href="#resources" class="nav-link">Resources</a>
+            <a href="#about" class="nav-link">About</a>
+        </div>
+
+        <div class="nav-actions">
+            <button class="btn btn-secondary">Sign In</button>
+            <button class="btn btn-primary">Get Started</button>
+        </div>
+
+        <button class="mobile-menu-btn">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="text-gradient">Decode</span> programming<br>
+                through language
+            </h1>
+            <p class="hero-subtitle">
+                Understand code concepts by exploring their English roots.<br>
+                Designed for visual learners and non-native speakers.
+            </p>
+            <div class="hero-cta">
+                <button class="btn btn-primary btn-lg">
+                    Start Learning
+                    <span class="arrow-icon">→</span>
+                </button>
+                <button class="btn btn-text">
+                    Watch Demo
+                    <span class="play-icon">▶</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="code-bridge">
+                <div class="code-side">
+                    <span class="code-keyword">function</span>
+                    <span class="code-symbol">( )</span>
+                    <span class="code-brace">{ }</span>
+                </div>
+                <div class="bridge-line">
+                    <div class="bridge-dot"></div>
+                </div>
+                <div class="language-side">
+                    <span class="language-word">Action</span>
+                    <span class="language-word">Input</span>
+                    <span class="language-word">Container</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Grid -->
+<section class="features">
+    <div class="section-header">
+        <h2 class="section-title">Why it works</h2>
+        <p class="section-subtitle">Cognitive bridges accelerate learning</p>
+    </div>
+
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">🔄</div>
+            <h3>Dual Coding</h3>
+            <p>Combine verbal explanations with visual metaphors for better retention.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🧩</div>
+            <h3>Pattern Mapping</h3>
+            <p>Recognize linguistic patterns in code syntax and structure.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Instant Feedback</h3>
+            <p>Interactive exercises reinforce concepts immediately.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Lessons Preview -->
+<section id="lessons" class="lessons">
+    <div class="section-header">
+        <h2 class="section-title">Core Concepts</h2>
+        <p class="section-subtitle">Start with fundamentals</p>
+    </div>
+
+    <div class="lessons-grid">
+        <a href="lessons/functions.html" class="lesson-card">
+            <div class="lesson-icon">ƒ</div>
+            <h3>Functions</h3>
+            <p>Actions as bridges between inputs and outputs</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 25%"></div>
+            </div>
+        </a>
+
+        <a href="lessons/loops.html" class="lesson-card">
+            <div class="lesson-icon">↻</div>
+            <h3>Loops</h3>
+            <p>Circular paths in program execution</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 10%"></div>
+            </div>
+        </a>
+
+        <a href="lessons/variables.html" class="lesson-card">
+            <div class="lesson-icon">𝑥</div>
+            <h3>Variables</h3>
+            <p>Named containers for data</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 5%"></div>
+            </div>
+        </a>
+    </div>
+</section>
+
+<!-- Interactive Demo -->
+<section id="practice" class="demo">
+    <div class="demo-container">
+        <div class="demo-content">
+            <h2 class="demo-title">Try it yourself</h2>
+            <p class="demo-text">
+                Our interactive playground lets you experiment with concepts immediately.
+                See how changing parameters affects execution flow.
+            </p>
+            <button class="btn btn-primary">
+                Launch Sandbox
+                <span class="arrow-icon">→</span>
+            </button>
+        </div>
+
+        <div class="demo-visual">
+            <div class="code-editor">
+                <div class="editor-tabs">
+                    <span class="tab active">loop.js</span>
+                    <span class="tab">output</span>
+                </div>
+                <pre class="code-preview">
+<span class="code-comment">// Click Run to see the bridge in action</span>
+<span class="code-keyword">function</span> <span class="code-function">crossBridge</span>(steps) {
+  <span class="code-keyword">for</span>(<span class="code-keyword">let</span> i = <span class="code-number">0</span>; i < steps; i++) {
+    <span class="code-function">console</span>.<span class="code-function">log</span>(<span class="code-string">`Step ${i+1}: Crossing`</span>);
+  }
+  <span class="code-keyword">return</span> <span class="code-string">"Reached the end!"</span>;
+}</pre>
+                <div class="editor-footer">
+                    <button class="run-btn">Run Code</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <span class="logo-icon">〈〉</span>
+            <span class="logo-text">bridgit</span>
+            <p class="footer-tagline">Bridging code and language</p>
+        </div>
+
+        <div class="footer-links">
+            <div class="link-group">
+                <h4>Learn</h4>
+                <a href="#">Lessons</a>
+                <a href="#">Exercises</a>
+                <a href="#">Guides</a>
+            </div>
+
+            <div class="link-group">
+                <h4>About</h4>
+                <a href="#">Methodology</a>
+                <a href="#">Team</a>
+                <a href="#">Research</a>
+            </div>
+
+            <div class="link-group">
+                <h4>Connect</h4>
+                <a href="#">GitHub</a>
+                <a href="#">Twitter</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2023 Bridgit Learning System. All rights reserved.</p>
+        <div class="legal-links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
